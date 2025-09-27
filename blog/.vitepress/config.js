@@ -6,4 +6,7 @@ export default defineConfig({
     description: 'Swift 블로그.',
     cleanUrls: true,
     appearance: 'force-auto',
+    sitemap: {
+        hostname: 'https://nest.yujingaya.com'
+    }
 })
