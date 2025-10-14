@@ -21,7 +21,7 @@ Swift에서 비탈출 클로저는 [다른 타입의 프로퍼티로 저장될 �
 
 [restrictions]: https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types#Restrictions-for-Nonescaping-Closures
 
-```Swift
+```Swift{7,11,12}
 final class MyViewController: UIViewController {
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     var items: [Item]
@@ -44,7 +44,7 @@ final class MyViewController: UIViewController {
 
 미스테리는 `performBatchUpdates(_:completion:)` 함수를 선언한 헤더 파일에서 풀 수 있었다.
 
-```Objective-C
+```Objective-C{2}
 @interface UICollectionView : UIScrollView <UIDataSourceTranslating>
 - (void)performBatchUpdates:(void (NS_NOESCAPE ^ _Nullable)(void))updates
                  completion:(void (^ _Nullable)(BOOL finished))completion NS_SWIFT_DISABLE_ASYNC;
