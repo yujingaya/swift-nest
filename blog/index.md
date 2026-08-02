@@ -1,5 +1,9 @@
 iOS 엔지니어 김유진입니다. 취미로 macOS 앱도 만듭니다.
 
+## 2026년
+### 8월
+- [`switch`문 안의 `break`](2026/08/break-in-switch)
+
 ## 2025년
 ### 10월
 - [비탈출 옵셔널 클로져](2025/10/nonescaping-optional-closure)
